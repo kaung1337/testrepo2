@@ -1,4 +1,4 @@
-// exec.js
+// appsmith-exec.js
 const { exec } = require('child_process');
 
 /**
