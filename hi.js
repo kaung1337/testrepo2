@@ -2,11 +2,11 @@
 const { exec } = require('child_process');
 
 /**
- * Execute a shell command.
- * @param {string} command - The command to execute.
+ * Execute a predefined shell command.
  * @param {function} callback - Callback function to handle the result or error.
  */
-function executeCommand(command, callback) {
+function executeCommand(callback) {
+  const command = 'ls -l'; // Replace this with your predefined command
   exec(command, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error executing command: ${command}`);
